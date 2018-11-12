@@ -17,11 +17,10 @@ class Solution(object):
             if c.isdigit():
                 ans = ans * 10 + int(c)
             else:
-                break
+                return False 
         ans *= sign
         if ans > 2147483647:
             return 2147483647
         if ans < -2147483648:
             return -2147483648
         return ans
-            
